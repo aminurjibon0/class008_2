@@ -1,0 +1,964 @@
+@font-face {
+  font-family: cubano;
+  src: url('../fonts/Cubano.ttf');
+}
+@font-face {
+  font-family: BrandonBold;
+  src: url(../fonts/BrandonGrotesque-Bold.ttf);
+}
+@font-face {
+  font-family: BrandonRegular;
+  src: url(../fonts/BrandonGrotesque-Regular.ttf);
+}
+@font-face {
+  font-family: BrandonLight;
+  src: url(../fonts/BrandonGrotesque-Light.ttf);
+}
+@font-face {
+  font-family: BrandonMedium;
+  src: url(../fonts/BrandonGrotesque-Medium.ttf);
+}
+
+/*fonts end*/
+body {
+  font-family: BrandonRegular;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*header start*/
+header {
+  background: url('../images/tint.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+/*  border: 1px solid purple;*/
+}
+.header_top {
+  padding: 50px 0;
+}
+
+.logo {
+  font-family: cubano;
+  font-size: 25px;
+/*  border: 1px solid white;*/
+  width: 20%;
+  float: left;
+  color: white;
+  padding: 5px 0;
+  position: relative;
+  padding-left: 50px;
+}
+.logo img {
+  position: absolute;
+  left: 0;
+  top: 6px
+}
+.menu_bar {
+  color: white;
+  font-size: 30px;
+  float: right;
+  padding: 0 10px;
+  display: none;
+}
+.menu {
+/*  border: 1px solid white;*/
+  width: 60%;
+  float: right;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.menu ul li {
+  float: left;
+}
+.menu ul li a {
+  font-family: BrandonMedium;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 15px;
+  transition: .4s;
+}
+.menu ul li a:hover {
+  color: #BEBBBF;
+}
+.menu ul li:last-child a {
+  padding-right: 0;
+}
+
+.header_text {
+  text-align: center;
+  padding: 130px 0;
+}
+.header_text h3 {
+  font-family: BrandonLight;
+  font-size: 32px;
+  color: #BEBBBF;
+  margin: 0;
+}
+.header_text h1 {
+  font-family: BrandonBold;
+  font-size: 66px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+.more_btn {
+  text-align: center;
+  margin-top: 40px;
+}
+.more_btn button {
+  font-family: brandonBold;
+  font-size: 23px;
+  border-style: none;
+  padding: 20px 66px;
+  border: 3px solid white;
+  background: transparent;
+  color: white;
+  transition: all .3s;
+}
+.more_btn button:hover {
+  background: white;
+  color: gray;
+  border: 3px solid transparent;
+}
+
+.development {
+  padding: 70px 0;
+}
+
+.development_text {
+  width: 65%;
+  float: left;
+}
+.development_text h1, .identity h1 {
+  font-family: BrandonLight;
+  font-size: 60px;
+  margin: 0;
+}
+.development_text p, .identity p {
+  font-size: 18px;
+  color: #777777;
+}
+.bold {
+  font-family: BrandonBold;
+}
+
+.development_img {
+  width: 25%;
+  float: right;
+  padding-top: 20px;
+}
+.development_img img {
+  width: 100%;
+}
+.identity {
+  padding: 60px 0;
+  background: #FAFAFA;
+}
+
+.identity_img {
+  width: 25%;
+  float: left;
+  padding-top: 40px;
+}
+.identity_img img {
+  width: 100%;
+}
+.identity_text {
+  width: 65%;
+  float: right;
+}
+
+
+.services {
+  padding: 40px 0;
+}
+
+.service_single {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+.service_single_img {
+  width: 20%;
+/*  border: 1px solid black;*/
+  padding: 10px;
+  overflow: hidden;
+  float: left;
+}
+.service_single_icon {
+  width: 75px;
+  height: 75px;
+  float: left;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 72px;
+  background: #222222;
+  color: white;
+}
+
+.service_single_text {
+  width: 70%;
+/*  border: 1px solid black;*/
+  float: left;
+}
+.service_single_text h3 {
+  margin: 0;
+  font-size: 22px;
+}
+.service_single_text p {
+  margin: 5px 0 0 0;
+  font-size: 18px;
+}
+
+
+.clients {
+  background: #FAFAFA;
+  padding: 60px 0;
+}
+
+.client_header {
+  text-align: center;
+}
+.client_header h1 {
+  font-size: 60px;
+  margin: 0;
+  line-height: 60px;
+}
+.client_header p {
+  font-size: 22px;
+  margin: 0;
+}
+.client_single {
+  overflow: hidden;
+  padding: 20px 0;
+}
+.client_img_left {
+  width: 20%;
+  float: left;
+}
+.client_img_left img {
+  width: 100%;
+  border-radius: 50%;
+}
+.client_circle {
+  width: 160px;
+  height: 160px;
+  background: black;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.client_text_right {
+  width: 70%;
+  float: right;
+  background: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+}
+.client_text_right::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #ffffff;
+  position: absolute;
+  left: -20px;
+  top: 70px;
+  
+}
+.client_text_left {
+  width: 70%;
+  float: left;
+  padding: 10px 30px;
+  margin: 10px;
+  background: #ffffff;
+  position: relative;
+  border-radius: 8px;
+}
+.client_text_left::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid white;
+  position: absolute;
+  right: -20px;
+  top: 70px;
+  z-index: 99;
+}
+.client_img_right {
+  float: right;
+}
+.client_img_right img {
+  width: 100%;
+  border-radius: 50%;
+}
+.client_msg {
+  font-size: 26px;
+  color: #777777;
+  margin: 0 20px;;
+  padding: 0 25px 10px;
+}
+
+.client_name {
+  font-size: 26px;
+  color: #7690C5;
+  margin: 0;
+  padding: 0 45px;
+}
+
+.work_with {
+  padding: 60px 0;
+}
+.work_with ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.work_with ul li {
+  float: left;
+  display: block;
+  padding: 10px 30px;
+}
+
+.team {
+  background: #111111;
+  color: white;
+  padding: 30px 0;
+}
+
+.team_heading {
+  text-align: center;
+  padding: 40px 0;
+}
+.team_heading h1 {
+  font-family: BrandonLight;
+  font-size: 60px;
+  color: white;
+  margin: 0;
+}
+.team_heading p {
+  font-size: 22px;
+  margin: 0;
+}
+
+.team_member {
+  width: 33%;
+  float: left;
+}
+
+.member_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: block;
+  margin: 0 auto;
+}
+.member_img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.member_info {
+  text-align: center;
+}
+
+.member_name {
+  font-family: BrandonBold;
+  font-size: 18px;
+  margin: 20px 0 0;
+}
+
+.member_work {
+  font-size: 16px;
+  margin: 0;
+}
+
+.member_social {
+  overflow: hidden;
+  width: 140px;
+  margin: 20px auto;
+/*  border: 1px solid;*/
+}
+.member_social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.member_social ul li {
+  float: left;
+  margin-right: 6%;
+}
+.member_social ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 39px;
+  display: block;
+  text-align: center;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border: 3px solid white;
+  border-radius: 50%;
+  transition: all .4s;
+}
+.member_social ul li:last-child {
+  margin-right: 0;
+}
+.twitter:hover {
+  color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+.facebook:hover {
+  color: #4267B2;
+  border-color: #4267B2;
+}
+.pinterest:hover {
+  color: #E60020;
+  border-color: #E60020;
+}
+.team_footer {
+  padding: 20px 217px;
+  text-align: center;
+}
+.contact {
+  background: #7690C5;
+  color: white;
+  padding: 70px 0;
+}
+
+.contact_info {
+  box-sizing: border-box;
+/*  border: 1px solid;*/
+}
+.contact_heading {
+  padding-bottom: 40px;
+}
+.contact_heading h1 {
+  font-family: BrandonLight;
+  font-size: 60px;
+  margin: 0;
+}
+.contact_heading p {
+  font-size: 18px;
+  margin: 0;
+}
+.contact_with {
+  width: 50%;
+  float: left;
+  padding: 0;
+/*  border: 1px solid;*/
+  overflow: hidden;
+}
+
+.contact_single {
+  font-size: 18px;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  
+}
+.contact_single i {
+  margin-right: 10px;
+}
+.contact_form {
+  width: 49%;
+  float: right;
+  box-sizing: border-box;
+/*  border: 1px solid;*/
+}
+
+.name_input, .email_input {
+  width: 100%;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin: 10px 0;
+}
+
+.comments {
+  padding: 10px 20px;
+  font-size: 22px;
+  width: 100%;
+  border-radius: 7px;
+  margin: 10px 0;
+}
+footer {
+  background: #7690C5;
+}
+footer .container {
+  border-top: 1px solid #87A0D2;
+  padding: 10px 0;
+}
+footer p {
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+
+  .header_text {
+    padding: 100px 0;
+  }
+  .header_text h1 {
+    font-size: 56px;
+  }
+
+  .more_btn {
+    margin-top: 30px;
+  }
+  .more_btn button {
+    font-size: 20px;
+  }
+  .development {
+    padding: 50px 0;
+  }
+  .development_text h1,
+  .identity h1 {
+    font-size: 50px;
+  }
+
+  .identity {
+    padding: 50px 0;
+  }
+
+  .identity_img {
+    margin-top: 40px;
+  }
+
+
+  .services {
+    padding: 40px 0;
+  }
+
+  .service_single_img {
+    width: 22%;
+    padding: 5px;
+  }
+
+  .service_single_text h3 {
+    font-size: 20px;
+  }
+
+  .service_single_text p {
+    font-size: 16px;
+  }
+
+
+  .clients {
+    padding: 50px 0;
+  }
+
+  .client_header h1 {
+    font-size: 50px;
+  }
+
+  .client_header p {
+    font-size: 20px;
+  }
+
+  .client_single {
+    overflow: hidden;
+    padding: 10px 0;
+  }
+
+  .client_img_left {
+    width: 22%;
+  }
+
+  .client_circle {
+    width: 130px;
+    height: 130px;
+  }
+
+  .client_text_right {
+    width: 69%;
+  }
+  .client_text_left {
+    width: 68%;
+  }
+
+  .client_img_right {
+    width: 20%;
+    float: right;
+  }
+
+  .client_msg {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .client_name {
+    font-size: 20px;
+    color: #7690C5;
+    margin: 0;
+    padding: 0 45px;
+  }
+
+  .work_with {
+    padding: 50px 0;
+  }
+
+  .work_with ul li {
+    padding: 10px 65px;
+  }
+
+  .team {
+    padding: 10px 0;
+  }
+
+  .team_heading h1 {
+    font-size: 50px;
+  }
+
+  .team_heading p {
+    font-size: 20px;
+  }
+  .member_img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .team_footer {
+    padding: 20px 117px;
+    text-align: center;
+  }
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .contact_heading {
+    padding-bottom: 20px;
+  }
+
+  .contact_heading h1 {
+    font-size: 50px;
+  }
+
+  .contact_heading p {
+    font-size: 16px;
+  }
+
+  .contact_single {
+    font-size: 16px;
+  }
+
+  .contact_single i {
+    margin-right: 5px;
+  }
+
+  .name_input,
+  .email_input {
+    font-size: 20px;
+    margin: 7px 0;
+  }
+  .comments {
+    max-height: 200px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  header {
+    background: url('../images/tint.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .header_top {
+    padding: 20px 0;
+  }
+  .menu_bar {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+
+  .header_text {
+    padding: 50px 0;
+  }
+
+  .header_text h3 {
+    font-family: BrandonLight;
+    font-size: 24px;
+    color: #BEBBBF;
+    margin: 0;
+  }
+
+  .header_text h1 {
+    font-family: BrandonBold;
+    font-size: 36px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .more_btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .more_btn button {
+    font-size: 18px;
+    padding: 10px 36px;
+    border: 1px solid white;
+    background: white;
+    color: #333333;
+  }
+  .more_btn button:hover {
+    background: white;
+    border: 1px solid white;
+  }
+
+  .development {
+    padding: 20px 0;
+  }
+
+  .development_text {
+    width: 100%;
+    float: none;
+  }
+
+  .development_text h1,
+  .identity h1 {
+    font-size: 30px;
+  }
+
+  .development_text p,
+  .identity p {
+    font-size: 16px;
+  }
+
+  .development_img {
+    width: 50%;
+    float: none;
+    margin: 0 auto;
+  }
+  .identity {
+    padding: 30px 0;
+  }
+
+  .identity_img {
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+    padding: 20px 0;
+  }
+
+  .identity_text {
+    width: 100%;
+    float: none;
+  }
+
+
+  .services {
+    padding: 20px 0;
+  }
+
+  .service_single {
+    width: 100%;
+    border-bottom: 2px solid #f7f7f7;
+  }
+  .service_single:last-child {
+    border-bottom: 0;
+  }
+  .service_single_text h3 {
+    font-size: 20px;
+  }
+
+  .service_single_text p {
+    font-size: 16px;
+  }
+
+
+  .clients {
+    padding: 30px 0;
+  }
+
+  .client_header h1 {
+    font-size: 40px;
+    margin: 0;
+    line-height: 30px;
+  }
+
+  .client_header p {
+    font-size: 20px;
+  }
+
+  .client_single {
+    padding: 10px 0;
+  }
+
+  .client_img_left {
+    width: 100%;
+    float: none;
+    margin: 20px auto 30px;
+  }
+
+  .client_circle {
+    width: 100px;
+    height: 100px;
+    margin: 20ox auto;
+  }
+
+  .client_text_right {
+    width: 100%;
+    float: none;
+  }
+
+  .client_text_right::before {
+    display: none;
+  }
+  .client_text_right::after {
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+    position: absolute;
+    top: -20px;
+    left: 42%;
+  }
+
+  .client_text_left {
+    width: 100%;
+    float: none;
+  }
+
+  .client_text_left::after {
+    display: none;
+  }
+  .client_text_left::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid white;
+    position: absolute;
+    bottom: -20px;
+    left: 41%;
+  }
+
+  .client_img_right {
+    float: none;
+    margin: 30px auto 20px;
+  }
+
+  .client_msg {
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 0 5px 10px;
+  }
+
+  .client_name {
+    font-size: 18px;
+    color: #7690C5;
+    margin: 0;
+    padding: 0 35px;
+  }
+
+  .work_with {
+    padding: 30px 0;
+  }
+
+  .team {
+    padding: 0;
+  }
+
+  .team_heading {
+    padding: 20px 0 30px;
+  }
+
+  .team_heading h1 {
+    font-size: 40px;
+  }
+
+  .team_heading p {
+    font-size: 18px;
+  }
+
+  .team_member {
+    width: 100%;
+    float: none;
+    border-bottom: 1px solid #2d2323;
+    margin: 20px 0;
+  }
+
+  .member_img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .team_footer {
+    padding: 0 10px 20px;
+  }
+
+  .contact {
+    padding: 30px 0;
+  }
+  .contact_heading {
+    padding-bottom: 20px;
+  }
+
+  .contact_heading h1 {
+    font-size: 40px;
+  }
+
+  .contact_with {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+  .contact_form {
+    width: 100%;
+    float: none;
+  }
+
+  .name_input,
+  .email_input {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 15px;
+  }
+
+  .comments {
+    padding: 8px 15px;
+    font-size: 20px;
+  }
+}
